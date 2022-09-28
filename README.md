@@ -71,7 +71,16 @@ Version control is a necessity in modern-day programming. Git and Github are big
 
 💻 Try out git yourself by following the GitHub Learning Lab course [here](https://lab.github.com/githubtraining/introduction-to-github).
 
-### 2a. Fork and Clone this Repository
+### 2a. Generate a GitHub Personal Access Token
+
+1. Login to Github and view your [Personal access tokens](https://github.com/settings/tokens)
+2. Select `Generate new token`
+3. Set expiration to `"No expiration"`
+4. Under "Select scopes" tick each checkbox
+5. Click `Generate Token`
+6. **Copy the new Token that you have created - you'll need it for the next steps!**
+
+### 2b. Fork and Clone this Repository
 
 You should now use git to download this repository so that you can work on the challenges on your local machine!
 
@@ -81,7 +90,7 @@ _If you are using WSL, follow this video:_ [Forking and cloning a repo with WSL]
 
 💻 **Time for you to make your own copy of this repository**
 
-1. Fork and clone this repository.
+1. Fork and clone this repository. When you try to clone this repo in your terminal you'll be prompted for your GitHub password, paste the Personal Access Token from the previous step and press `enter`/`return` - this will keep you logged-in so that you do not have to enter your password every time you use a `git` command.
 
 2. Open this repository in VSCode. (If you'd like to open it using your terminal, [this video](https://www.youtube.com/watch?v=iP5FKZXtDBs) is a good guide.)
 
