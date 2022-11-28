@@ -179,13 +179,11 @@ function countTheObjects(arr) {
   let countObjects = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    const currentItem = arr[i];
+    if (arr[i] === null) continue;
 
-    if (currentItem === null) continue;
+    if ( Array.isArray(arr[i]) ) continue;
 
-    if ( Array.isArray(currentItem) ) continue;
-
-    if (typeof currentItem === 'object') countObjects++;
+    if (typeof arr[i] === 'object') countObjects++;
   }
 
   return countObjects;
