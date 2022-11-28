@@ -88,13 +88,17 @@ function passwordValidation(password) {
   for (let i = 0; i < password.length; i++) {
     const passwordChar = password.charAt(i);
     
-    if (passwordChar === 'n' ||
-    passwordChar === 'N') {
+    if (
+      passwordChar === 'n' ||
+      passwordChar === 'N'
+    ) {
       hasN = true;
     }
 
-    if (passwordChar === 'c' ||
-    passwordChar === 'C') {
+    if (
+      passwordChar === 'c' ||
+      passwordChar === 'C'
+    ) {
       hasC = true;
     }
   }
