@@ -69,7 +69,7 @@ Version control is a necessity in modern-day programming. Git and Github are big
 
 📹 For a basic introduction to git and Github, please watch videos 1-7 of [this playlist](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
 
-💻 Try out git yourself by following the GitHub Learning Lab course [here](https://lab.github.com/githubtraining/introduction-to-github).
+💻 Try out git yourself by following the GitHub Learning Lab course [here](https://github.com/skills/introduction-to-github).
 
 ### 2a. Generate a GitHub Personal Access Token
 
