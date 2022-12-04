@@ -3,8 +3,8 @@
 
 function tripleNums(nums) {
   const tripledArr = [];
-  for (let i = 0; i < nums.length; i++) {
-    tripledArr.push(nums[i] * 3);
+  for (let element of nums) {
+    tripledArr.push(element * 3);
   }
   return tripledArr;
 }
@@ -14,11 +14,14 @@ function tripleNums(nums) {
 
 function shoutNames(names) {
   // shoutNames capitalises all the names and returns them in a new array.
-  const shoutyArray = [];
+  /*const shoutyArray = [];
+  
   for (let i = 0; i < names.length; i++) {
     const upperCaseName = names[i].toUpperCase();
     shoutyArray.push(upperCaseName);
-  }
+  }*/
+
+  const shoutyArray = names.map( (x) => x.toUpperCase() );
   return shoutyArray;
 }
 
@@ -27,12 +30,13 @@ function shoutNames(names) {
 
 function isSweetEnough(foodArray) {
   // isSweetEnough returns true if ALL foods are sweet.
-  for (let i = 0; i < foodArray.length; i++) {
+  /*for (let i = 0; i < foodArray.length; i++) {
     if (foodArray[i].flavour !== 'sweet') {
       return false;
     }
   }
-  return true;
+  return true;*/
+  return foodArray.every( (x) => x.flavour === 'sweet');
 }
 
 // TASK 4
@@ -40,14 +44,16 @@ function isSweetEnough(foodArray) {
 
 function getExcited(sentence) {
   // getExcited changes all full stops in a sentence to an exclamation mark!
-  const sentenceArray = sentence.split('');
+  /*const sentenceArray = sentence.split('');
   for (let i = 0; i < sentenceArray.length; i++) {
     if (sentenceArray[i] === '.') {
       sentenceArray[i] = '!';
     }
   }
 
-  return sentenceArray.join('');
+  return sentenceArray.join('');*/
+
+  return sentence.replace(/\./g, '!');
 }
 
 // TASK 5
@@ -55,7 +61,7 @@ function getExcited(sentence) {
 
 function isShrekCharacter(characters) {
   // isShrekCharacter receives an array of characters and *only* returns the characters from the Shrek franchise in a new array.
-  console.log(characters);
+  /*console.log(characters);
   const x = [];
 
   for (let i = 0; i < characters.length; i++) {
@@ -63,7 +69,9 @@ function isShrekCharacter(characters) {
     if (characters[i].movie.includes('Shrek')) {
       x.push(characters[i]);
     }
-  }
+  }*/
+
+  let x = characters.filter( (x) => x.movie.includes('Shrek') );
   return x;
 }
 
